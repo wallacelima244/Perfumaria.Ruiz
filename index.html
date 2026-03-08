@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rodrigues Gomes Perfumes</title>
+  <meta
+    name="description"
+    content="Perfumes importados e árabes masculinos e femininos. Carrinho, formulário e finalização no WhatsApp."
+  />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="header" id="topo">
+    <div class="container header__inner">
+      <a class="brand" href="#inicio" aria-label="Ir para o início">
+        <img
+          class="brand__photo"
+          src="https://placehold.co/160x160/png"
+          alt="Foto do Rodrigues"
+        />
+        <span class="brand__text">
+          <span class="brand__name">Rodrigues Gomes Perfumes</span>
+          <span class="brand__role">Importados e árabes • Masculino e feminino</span>
+        </span>
+      </a>
+
+      <nav class="nav" aria-label="Menu principal">
+        <a href="#mais-vendidos">Mais vendidos</a>
+        <a href="#importado-masculino">Importado masculino</a>
+        <a href="#importado-feminino">Importado feminino</a>
+        <a href="#arabe-masculino">Árabe masculino</a>
+        <a href="#arabe-feminino">Árabe feminino</a>
+        <a href="#checkout" class="nav__cta">Carrinho</a>
+      </nav>
+
+      <button class="menuBtn" aria-label="Abrir menu" aria-expanded="false" id="menuBtn">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <div class="mobileNav" id="mobileNav" aria-hidden="true">
+      <div class="container mobileNav__panel">
+        <a href="#mais-vendidos">Mais vendidos</a>
+        <a href="#importado-masculino">Importado masculino</a>
+        <a href="#importado-feminino">Importado feminino</a>
+        <a href="#arabe-masculino">Árabe masculino</a>
+        <a href="#arabe-feminino">Árabe feminino</a>
+        <a href="#checkout" class="btn btn--primary full">Abrir carrinho</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="inicio" class="hero">
+    <div class="container hero__grid">
+      <section class="hero__main reveal">
+        <div class="hero__badge">
+          <span class="dot"></span>
+          <span>Catálogo premium • Pedido via WhatsApp</span>
+        </div>
+
+        <h1>
+          Perfumes que deixam
+          <span class="shine">presença.</span>
+        </h1>
+
+        <p class="lead">
+          Trabalhamos com uma seleção exclusiva de perfumes importados para homens e mulheres
+          que valorizam elegância, presença e sofisticação. Fragrâncias marcantes, com excelente
+          fixação e qualidade, perfeitas para quem quer deixar sua marca em qualquer ocasião.
+        </p>
+
+        <div class="hero__actions">
+          <a class="btn btn--primary btn--big" href="#mais-vendidos">Ver catálogo</a>
+          <a class="btn btn--ghost btn--big" href="#checkout">Comprar agora</a>
+        </div>
+
+        <div class="hero__bullets">
+          <div class="bullet">✔️ Importados selecionados</div>
+          <div class="bullet">✔️ Árabe masculino e feminino</div>
+          <div class="bullet">✔️ Pedido com endereço</div>
+          <div class="bullet">✔️ Finalização no WhatsApp</div>
+        </div>
+      </section>
+
+      <aside class="hero__card reveal">
+        <div class="hero__image hero__image--cover"></div>
+        <div class="hero__panel">
+          <div class="panel__top">
+            <div>
+              <h2>Rodrigues Gomes Perfumes</h2>
+              <p class="muted">Catálogo moderno e elegante</p>
+            </div>
+            <span class="pill">Premium</span>
+          </div>
+
+          <div class="panel__grid">
+            <div class="mini">
+              <span>Pagamento</span>
+              <strong>PIX / 50% / Cartão 3x</strong>
+            </div>
+            <div class="mini">
+              <span>Pedido</span>
+              <strong>Direto no WhatsApp</strong>
+            </div>
+            <div class="mini">
+              <span>Prazo</span>
+              <strong>Até 5 dias</strong>
+            </div>
+            <div class="mini">
+              <span>Entrega</span>
+              <strong>Com endereço do cliente</strong>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <section id="mais-vendidos" class="section">
+    <div class="container">
+      <div class="section__head reveal">
+        <p class="kicker">Destaque</p>
+        <h2>Mais vendidos</h2>
+        <p class="muted max">Perfumes em destaque para chamar atenção logo de cara.</p>
+      </div>
+
+      <div class="cards cards--featured">
+        <article class="card reveal productCard" data-name="Dior Sauvage" data-price="479" data-category="Importado masculino">
+          <div class="card__imgWrap">
+            <img class="card__img" src="https://images.unsplash.com/photo-1541643600914-78b084683601?auto=format&fit=crop&w=1200&q=80" alt="Dior Sauvage">
+            <span class="tag">Mais vendido</span>
+          </div>
+          <div class="card__body">
+            <h3>Dior Sauvage</h3>
+            <p class="muted">Fresco, sofisticado e de presença forte.</p>
+            <div class="priceBox">
+              <span class="oldPrice">R$ 529</span>
+              <strong class="price">R$ 479</strong>
+            </div>
+            <button class="btn btn--primary full addToCart">Adicionar ao carrinho</button>
+          </div>
+        </article>
+
+        <article class="card reveal productCard" data-name="Good Girl" data-price="499" data-category="Importado feminino">
+          <div class="card__imgWrap">
+            <img class="card__img" src="https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&w=1200&q=80" alt="Good Girl">
+            <span class="tag">Mais vendido</span>
+          </div>
+          <div class="card__body">
+            <h3>Good Girl</h3>
+            <p class="muted">Elegante, sensual e muito marcante.</p>
+            <div class="priceBox">
+              <span class="oldPrice">R$ 549</span>
+              <strong class="price">R$ 499</strong>
+            </div>
+            <button class="btn btn--primary full addToCart">Adicionar ao carrinho</button>
+          </div>
+        </article>
+
+        <article class="card reveal productCard" data-name="Lattafa Asad" data-price="189" data-category="Árabe masculino">
+          <div class="card__imgWrap">
+            <img class="card__img" src="https://images.unsplash.com/photo-1563170351-be82bc888aa4?auto=format&fit=crop&w=1200&q=80" alt="Lattafa Asad">
+            <span class="tag">Mais vendido</span>
+          </div>
+          <div class="card__body">
+            <h3>Lattafa Asad</h3>
+            <p class="muted">Intenso, encorpado e ótimo custo-benefício.</p>
+            <div class="priceBox">
+              <span class="oldPrice">R$ 229</span>
+              <strong class="price">R$ 189</strong>
+            </div>
+            <button class="btn btn--primary full addToCart">Adicionar ao carrinho</button>
+          </div>
+        </article>
+
+        <article class="card reveal productCard" data-name="Yara Lattafa" data-price="169" data-category="Árabe feminino">
+          <div class="card__imgWrap">
+            <img class="card__img" src="https://images.unsplash.com/photo-1616949755610-8c9bbc08f138?auto=format&fit=crop&w=1200&q=80" alt="Yara Lattafa">
+            <span class="tag">Mais vendido</span>
+          </div>
+          <div class="card__body">
+            <h3>Yara Lattafa</h3>
+            <p class="muted">Doce na medida certa e muito procurado.</p>
+            <div class="priceBox">
+              <span class="oldPrice">R$ 209</span>
+              <strong class="price">R$ 169</strong>
+            </div>
+            <button class="btn btn--primary full addToCart">Adicionar ao carrinho</button>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--alt">
+    <div class="container">
+      <div class="section__head reveal">
+        <p class="kicker">Promoções</p>
+        <h2>Ofertas da semana</h2>
+        <p class="muted max">Esses descontos são exemplos para você alterar depois.</p>
+      </div>
+
+      <div class="promoGrid">
+        <div class="promoCard reveal">
+          <span class="promoTag">-15% OFF</span>
+          <h3>Bleu de Chanel</h3>
+          <p class="muted">Promoção especial por tempo limitado.</p>
+          <div class="priceBox">
+            <span class="oldPrice">R$ 599</span>
+            <strong class="price">R$ 509</strong>
+          </div>
+        </div>
+
+        <div class="promoCard reveal">
+          <span class="promoTag">-18% OFF</span>
+          <h3>La Vie Est Belle</h3>
+          <p class="muted">Um dos femininos mais desejados.</p>
+          <div class="priceBox">
+            <span class="oldPrice">R$ 559</span>
+            <strong class="price">R$ 459</strong>
+          </div>
+        </div>
+
+        <div class="promoCard reveal">
+          <span class="promoTag">-20% OFF</span>
+          <h3>Oud For Glory</h3>
+          <p class="muted">Árabe intenso com presença premium.</p>
+          <div class="priceBox">
+            <span class="oldPrice">R$ 249</span>
+            <strong class="price">R$ 199</strong>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="importado-masculino" class="section">
+    <div class="container">
+      <div class="section__head reveal">
+        <p class="kicker">Categoria</p>
+        <h2>Importado masculino</h2>
+      </div>
+
+      <div class="cards">
+        <article class="card reveal productCard" data-name="Dior Sauvage" data-price="479" data-category="Importado masculino">
+          <div class="card__imgWrap"><img class="card__img" src="https://images.unsplash.com/photo-1541643600914-78b084683601?auto=format&fit=crop&w=1200&q=80" alt="Dior Sauvage"></div>
+          <div class="card__body"><h3>Dior Sauvage</h3><p class="muted">Fresco e sofisticado.</p><div class="priceBox"><strong class="price">R$ 479</strong></div><button class="btn btn--primary full addToCart">Adicionar</button></div>
+        </article>
+
+        <article class="card reveal productCard" data-name="Bleu de Chanel" data-price="529" data-category="Importado masculino">
+          <div class="card__imgWrap"><img class="card__img" src="https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?auto=format&fit=crop&w=1200&q=80" alt="Bleu de Chanel"></div>
+          <div class="card__body"><h3>Bleu de Chanel</h3><p class="muted">Elegância moderna e marcante.</p><div class="priceBox"><strong class="price">R$ 529</strong></div><button class="btn btn--primary full addToCart">Adicionar</button></div>
+        </article>
+
+        <article class="card reveal productCard" data-name="Versace Eros" data-price="459" data-category="Importado masculino">
+          <div class="card__imgWrap"><img class="card__img" src="https://images.unsplash.com/photo-1610461888750-10bfc601b874?auto=format&fit=crop&w=1200&q=80" alt="Versace Eros"></div>
+          <div class="card__body"><h3>Versace Eros</h3><p class="muted">Doce, envolvente e elogiado.</p><div class="priceBox"><strong class="price">R$ 459</strong></div><button class="btn btn--primary full addToCart">Adicionar</button></div>
+        </article>
+
+        <article class="card reveal productCard" data-name="1 Million" data-price="429" data-category="Importado masculino">
+          <div class="card__imgWrap"><img class="card__img" src="https://images.unsplash.com/photo-1588405748880-12d1d2a59b75?auto=format&fit=crop&w=1200&q=80" alt="1 Million"></div>
+          <div class="card__body"><h3>1 Million</h3><p class="muted">Impactante e muito conhecido.</p><div class="priceBox"><strong class="price">R$ 429</strong></div><button class="btn btn--primary full addToCart">Adicionar</button></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="importado-feminino" class="section section--alt">
+    <div class="container">
+      <div class="section__head reveal">
+        <p class="kicker">Categoria</p>
+        <h2>Importado feminino</h2>
+      </div>
+
+      <div class="cards">
+        <article class="card reveal productCard" data-name="Good Girl" data-price="499" data-category="Importado feminino">
+          <div class="card__imgWrap"><img class="card__img" src="https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&w=1200&q=80" alt="Good Girl"></div>
+          <div class="card__body"><h3>Good Girl</h3><p class="muted">Marcante e feminina.</p><div class="priceBox"><strong class="price">R$ 499</strong></div><button class="btn btn--primary full addToCart">Adicionar</button></div>
+        </article>
+
+        <article class="card reveal productCard" data-name="La Vie Est Belle" data-price="489" data-category="Importado feminino">
+          <div class="card__imgWrap"><img class="card__img" src="https://images.unsplash.com/photo-1590736969955-71cc94901144?auto=format&fit=crop&w=1200&q=80" alt="La Vie Est Belle"></div>
+          <div class="card__body"><h3>La Vie Est Belle</h3><p class="muted">Doçura refinada e sofisticada.</p><div class="priceBox"><strong class="price">R$ 489</strong></div><button class="btn btn--primary full addToCart">Adicionar</button></div>
+        </article>
+
+        <article class="card reveal productCard" data-name="Coco Mademoiselle" data-price="559" data-category="Importado feminino">
+          <div class="card__imgWrap"><img class="card__img" src="https://images.unsplash.com/photo-1615634260167-c8cdede054de?auto=format&fit=crop&w=1200&q=80" alt="Coco Mademoiselle"></div>
+          <div class="card__body"><h3>Coco Mademoiselle</h3><p class="muted">Chique e atemporal.</p><div class="priceBox"><strong class="price">R$ 559</strong></div><button class="btn btn--primary full addToCart">Adicionar</button></div>
+        </article>
+
+        <article class="card reveal productCard" data-name="Scandal" data-price="439" data-category="Importado feminino">
+          <div class="card__imgWrap"><img class="card__img" src="https://images.unsplash.com/photo-1622618991746-fe6004db3a47?auto=format&fit=crop&w=1200&q=80" alt="Scandal"></div>
+          <div class="card__body"><h3>Scandal</h3><p class="muted">Cheiro intenso e moderno.</p><div class="priceBox"><strong class="price">R$ 439</strong></div><button class="btn btn--primary full addToCart">Adicionar</button></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="arabe-masculino" class="section">
+    <div class="container">
+      <div class="section__head reveal">
+        <p class="kicker">Categoria</p>
+        <h2>Árabe masculino</h2>
+      </div>
+
+      <div class="cards">
+        <article class="card reveal productCard" data-name="Lattafa Asad" data-price="189" data-category="Árabe masculino">
+          <div class="card__imgWrap"><img class="card__img" src="https://images.unsplash.com/photo-1563170351-be82bc888aa4?auto=format&fit=crop&w=1200&q=80" alt="Lattafa Asad"></div>
+          <div class="card__body"><h3>Lattafa Asad</h3><p class="muted">Intenso e muito elogiado.</p><div class="priceBox"><strong class="price">R$ 189</strong></div><button class="btn btn--primary full addToCart">Adicionar</button></div>
+        </article>
+
+        <article class="card reveal productCard" data-name="Oud For Glory" data-price="219" data-category="Árabe masculino">
+          <div class="card__imgWrap"><img class="card__img" src="https://images.unsplash.com/photo-1594035921348-9a8b2d2d68de?auto=format&fit=crop&w=1200&q=80" alt="Oud For Glory"></div>
+          <div class="card__body"><h3>Oud For Glory</h3><p class="muted">Luxuoso e poderoso.</p><div class="priceBox"><strong class="price">R$ 219</strong></div><button class="btn btn--primary full addToCart">Adicionar</button></div>
+        </article>
+
+        <article class="card reveal productCard" data-name="Ameer Al Oudh" data-price="179" data-category="Árabe masculino">
+          <div class="card__imgWrap"><img class="card__img" src="https://images.unsplash.com/photo-1601295452898-2dd58f10ea87?auto=format&fit=crop&w=1200&q=80" alt="Ameer Al Oudh"></div>
+          <div class="card__body"><h3>Ameer Al Oudh</h3><p class="muted">Quente e ambarado.</p><div class="priceBox"><strong class="price">R$ 179</strong></div><button class="btn btn--primary full addToCart">Adicionar</button></div>
+        </article>
+
+        <article class="card reveal productCard" data-name="Badee Al Oud" data-price="209" data-category="Árabe masculino">
+          <div class="card__imgWrap"><img class="card__img" src="https://images.unsplash.com/photo-1618331833071-ce81bd50d300?auto=format&fit=crop&w=1200&q=80" alt="Badee Al Oud"></div>
+          <div class="card__body"><h3>Badee Al Oud</h3><p class="muted">Presença forte e diferente.</p><div class="priceBox"><strong class="price">R$ 209</strong></div><button class="btn btn--primary full addToCart">Adicionar</button></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="arabe-feminino" class="section section--alt">
+    <div class="container">
+      <div class="section__head reveal">
+        <p class="kicker">Categoria</p>
+        <h2>Árabe feminino</h2>
+      </div>
+
+      <div class="cards">
+        <article class="card reveal productCard" data-name="Yara Lattafa" data-price="169" data-category="Árabe feminino">
+          <div class="card__imgWrap"><img class="card__img" src="https://images.unsplash.com/photo-1616949755610-8c9bbc08f138?auto=format&fit=crop&w=1200&q=80" alt="Yara Lattafa"></div>
+          <div class="card__body"><h3>Yara Lattafa</h3><p class="muted">Doce e delicado na medida certa.</p><div class="priceBox"><strong class="price">R$ 169</strong></div><button class="btn btn--primary full addToCart">Adicionar</button></div>
+        </article>
+
+        <article class="card reveal productCard" data-name="Fakhar Rose" data-price="189" data-category="Árabe feminino">
+          <div class="card__imgWrap"><img class="card__img" src="https://images.unsplash.com/photo-1587017539504-67cfbddac569?auto=format&fit=crop&w=1200&q=80" alt="Fakhar Rose"></div>
+          <div class="card__body"><h3>Fakhar Rose</h3><p class="muted">Floral sofisticado e moderno.</p><div class="priceBox"><strong class="price">R$ 189</strong></div><button class="btn btn--primary full addToCart">Adicionar</button></div>
+        </article>
+
+        <article class="card reveal productCard" data-name="Mayar" data-price="179" data-category="Árabe feminino">
+          <div class="card__imgWrap"><img class="card__img" src="https://images.unsplash.com/photo-1615634262417-d31b4dbb10b6?auto=format&fit=crop&w=1200&q=80" alt="Mayar"></div>
+          <div class="card__body"><h3>Mayar</h3><p class="muted">Versátil e envolvente.</p><div class="priceBox"><strong class="price">R$ 179</strong></div><button class="btn btn--primary full addToCart">Adicionar</button></div>
+        </article>
+
+        <article class="card reveal productCard" data-name="Ana Abiyedh" data-price="159" data-category="Árabe feminino">
+          <div class="card__imgWrap"><img class="card__img" src="https://images.unsplash.com/photo-1616604847462-219e7d31dc1b?auto=format&fit=crop&w=1200&q=80" alt="Ana Abiyedh"></div>
+          <div class="card__body"><h3>Ana Abiyedh</h3><p class="muted">Refinado e ótimo para o dia a dia.</p><div class="priceBox"><strong class="price">R$ 159</strong></div><button class="btn btn--primary full addToCart">Adicionar</button></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="checkout" class="section">
+    <div class="container split">
+      <div class="panel reveal">
+        <p class="kicker">Prazo e pagamento</p>
+        <h2>Compra organizada e transparente</h2>
+        <p class="muted max">
+          Todos os pedidos possuem prazo de entrega de até <strong>5 dias</strong> após a confirmação da compra.
+        </p>
+
+        <div class="spaceMini">
+          <div class="miniLine"><span class="miniDot"></span> PIX à vista – valor total no ato da compra</div>
+          <div class="miniLine"><span class="miniDot"></span> 50% antecipado – restante na entrega</div>
+          <div class="miniLine"><span class="miniDot"></span> Cartão de crédito – até 3x</div>
+          <div class="miniLine"><span class="miniDot"></span> Segurança e transparência no processo</div>
+        </div>
+      </div>
+
+      <div class="panel reveal">
+        <div class="checkoutTop">
+          <div>
+            <p class="kicker">Carrinho</p>
+            <h2>Finalize no WhatsApp</h2>
+          </div>
+          <button class="btn btn--ghost" id="clearCart">Limpar</button>
+        </div>
+
+        <div id="cartList" class="cartList"></div>
+
+        <div class="totalBox">
+          <span>Total do pedido</span>
+          <strong id="cartTotal">R$ 0,00</strong>
+        </div>
+
+        <form id="checkoutForm" class="checkoutForm">
+          <input class="input" id="nome" name="nome" placeholder="Seu nome" required />
+          <input class="input" id="telefone" name="telefone" placeholder="Seu telefone" required />
+          <input class="input" id="endereco" name="endereco" placeholder="Rua, número, bairro, cidade, CEP" required />
+
+          <select class="input" id="pagamento" name="pagamento" required>
+            <option value="">Forma de pagamento</option>
+            <option>PIX à vista</option>
+            <option>50% antecipado</option>
+            <option>Cartão de crédito em até 3x</option>
+          </select>
+
+          <textarea class="input textarea" id="observacoes" name="observacoes" placeholder="Observações"></textarea>
+
+          <button type="submit" class="btn btn--primary full">Finalizar pedido no WhatsApp</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div>
+        <strong>Rodrigues Gomes Perfumes</strong>
+        <div class="tiny muted">Importados e árabes • atendimento premium</div>
+      </div>
+
+      <div class="footer__links">
+        <a href="#importado-masculino">Importado masculino</a>
+        <a href="#importado-feminino">Importado feminino</a>
+        <a href="#arabe-masculino">Árabe masculino</a>
+        <a href="#arabe-feminino">Árabe feminino</a>
+      </div>
+    </div>
+  </footer>
+
+  <div class="socialFloat" aria-label="Acesso rápido">
+    <a
+      class="socialFloat__btn"
+      href="https://www.instagram.com/rodriguesgp_gomes?igsh=MTMyZ2t3MXFyeG5ubg%3D%3D&utm_source=qr"
+      target="_blank"
+      rel="noopener"
+      aria-label="Abrir Instagram"
+    >
+      <img
+        class="socialFloat__icon"
+        src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png"
+        alt="Instagram"
+      />
+    </a>
+
+    <a
+      class="socialFloat__btn"
+      href="https://wa.me/5511972480984?text=Ol%C3%A1%21%20Vim%20pelo%20site%20da%20Rodrigues%20Gomes%20Perfumes."
+      target="_blank"
+      rel="noopener"
+      aria-label="Abrir WhatsApp"
+    >
+      <img
+        class="socialFloat__icon"
+        src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
+        alt="WhatsApp"
+      />
+    </a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
