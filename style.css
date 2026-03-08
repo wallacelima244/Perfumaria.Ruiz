@@ -669,4 +669,130 @@ button,input,select,textarea{font:inherit}
     right:14px;
     bottom:14px;
   }
+}/* ===== MOBILE SEM QUEBRAR O PC ===== */
+
+body{
+  overflow-x: hidden;
+}
+
+@media (max-width: 980px){
+  .hero__grid,
+  .split,
+  .categoryLinks,
+  .homeGrid,
+  .miniList{
+    grid-template-columns: 1fr !important;
+  }
+
+  .nav{
+    display: none;
+  }
+
+  .menuBtn{
+    display: block;
+  }
+
+  .hero{
+    padding: 36px 0 24px;
+  }
+
+  .hero__main{
+    min-height: auto;
+  }
+
+  .hero__photo{
+    height: 280px;
+  }
+
+  .footer__inner{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 640px){
+  .container{
+    width: min(var(--container), calc(100% - 20px));
+  }
+
+  .header__inner{
+    min-height: auto;
+    padding: 10px 0;
+  }
+
+  .brand__photo{
+    width: 42px;
+    height: 42px;
+  }
+
+  .brand__name{
+    font-size: 14px;
+  }
+
+  .brand__role{
+    font-size: 11px;
+  }
+
+  .hero h1{
+    font-size: 30px;
+    max-width: 100%;
+  }
+
+  .lead{
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .hero__main{
+    padding: 20px;
+  }
+
+  .hero__panel{
+    padding: 16px;
+  }
+
+  .hero__panel h2{
+    font-size: 20px;
+  }
+
+  .hero__photo{
+    height: 220px;
+  }
+
+  .product__img{
+    height: 220px;
+  }
+
+  .section{
+    padding: 42px 0;
+  }
+
+  .section__head h2,
+  .pageHero h1{
+    font-size: 28px;
+  }
+
+  .hero__actions{
+    flex-direction: column;
+  }
+
+  .hero__actions .btn,
+  .panel .btn{
+    width: 100%;
+  }
+
+  .socialFloat{
+    right: 12px;
+    bottom: 12px;
+  }
+
+  .socialFloat__btn{
+    width: 52px;
+    height: 52px;
+  }
+
+  .socialFloat__icon{
+    width: 26px;
+    height: 26px;
+  }
 }
